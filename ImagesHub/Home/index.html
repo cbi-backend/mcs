@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy Coders | ImagesHub</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <main class="screen screen1">
+        <div class="cover">
+            <div class="image">
+                <img src="img/img (2).jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="nav-status">
+                    <div class="dot dot1"></div>
+                    <div class="dot dot2"></div>
+                    <div class="dot dot3"></div>
+                    <div class="dot dot4"></div>
+                </div>
+                <div class="text">
+                    <h1>Photography</h1>
+                    <p>When words become unclear, I shall focus with photographs. When images become inadequate, I shall be content with silence.</p>
+                </div>
+                <div class="button-group">
+                    <button class="link" onclick="closeAllSlide()">Skip</button>
+                    <button class="link" onclick="show(1)">Next</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="screen screen2">
+        <div class="cover">
+            <div class="image">
+                <img src="img/img (3).jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="nav-status">
+                    <div class="dot dot4"></div>
+                    <div class="dot dot1"></div>
+                    <div class="dot dot2"></div>
+                    <div class="dot dot3"></div>
+                </div>
+                <div class="text">
+                    <h1>Personal</h1>
+                    <p>Every moment of one’s existence, one is growing into more or retreating into less.</p>
+                </div>
+                <div class="button-group">
+                    <button class="link" onclick="closeAllSlide()">Skip</button>
+                    <button class="link" onclick="show(2)">Next</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="screen screen3">
+        <div class="cover">
+            <div class="image">
+                <img src="img/img (1).jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="nav-status">
+                    <div class="dot dot4"></div>
+                    <div class="dot dot3"></div>
+                    <div class="dot dot1"></div>
+                    <div class="dot dot2"></div>
+                </div>
+                <div class="text">
+                    <h1>Fashion</h1>
+                    <p>What you wear is how you present yourself to the world, especially today, when human contacts are so quick. Fashion is instant language.</p>
+                </div>
+                <div class="button-group">
+                    <button class="link" onclick="closeAllSlide()">Skip</button>
+                    <button class="link" onclick="show(3)">Next</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="screen screen4">
+        <div class="cover">
+            <div class="image">
+                <img src="img/img (9).jpg" alt="">
+            </div>
+            <div class="content">
+                <div class="nav-status">
+                    <div class="dot dot4"></div>
+                    <div class="dot dot3"></div>
+                    <div class="dot dot2"></div>
+                    <div class="dot dot1"></div>
+                </div>
+                <div class="text">
+                    <h1>Designers</h1>
+                    <p>The more I deal with the work as something that is my own, as something that is personal, the more successful it is.</p>
+                </div>
+                <div class="button-group">
+                    <button class="link" onclick="closeAllSlide()">Skip</button>
+                    <button class="link" onclick="closeAllSlide()">Next</button>
+                </div>
+            </div>
+        </div>
+    </main>
+    <main class="home">
+        <div class="home-body">
+            <div class="header">
+                <div class="name">
+                    <i class="fa fa-bars"></i>
+                    <h1>ImagesHub</h1>
+                </div>
+                <div class="links">
+                    <i class="fa fa-shopping-cart"></i>
+                    <i class="fa fa-user-circle"></i>
+                </div>
+                <div class="search">
+                    <input type="text" name="search" id="search" placeholder="Search ...">
+                    <i class="fa fa-search"></i>
+                </div>
+            </div>
+            <div class="body">
+                <div class="img-el">
+                    <img src="img/img (1).jpg" alt="">
+                    <div class="author">
+                        <div class="image">
+                            <i class="fa fa-user-circle"></i>
+                        </div>
+                        <div class="des">
+                            <h2>Fashion</h2>
+                        </div>
+                    </div>
+                    <div class="link-group">
+                        <i class="fa fa-heart" onclick="like(this)"></i>
+                        <span class="like">0</span>
+                        <i class="fa fa-thumbs-down" onclick="disLike(this)"></i>
+                        <span class="dis-like">0</span>
+                        <i class="fa fa-download" onclick="download(this)"></i>
+                        <span class="dis-like">0</span>
+                    </div>
+                </div>
+                <div class="img-el">
+                    <img src="img/img (2).jpg" alt="">
+                    <div class="author">
+                        <div class="image">
+                            <i class="fa fa-user-circle"></i>
+                        </div>
+                        <div class="des">
+                            <h2>Photography</h2>
+                        </div>
+                    </div>
+                    <div class="link-group">
+                        <i class="fa fa-heart" onclick="like(this)"></i>
+                        <span class="like">0</span>
+                        <i class="fa fa-thumbs-down" onclick="disLike(this)"></i>
+                        <span class="dis-like">0</span>
+                        <i class="fa fa-download" onclick="download(this)"></i>
+                        <span class="dis-like">0</span>
+                    </div>
+                </div>
+                <div class="img-el">
+                    <img src="img/img (3).jpg" alt="">
+                    <div class="author">
+                        <div class="image">
+                            <i class="fa fa-user-circle"></i>
+                        </div>
+                        <div class="des">
+                            <h2>Personal</h2>
+                        </div>
+                    </div>
+                    <div class="link-group">
+                        <i class="fa fa-heart" onclick="like(this)"></i>
+                        <span class="like">0</span>
+                        <i class="fa fa-thumbs-down" onclick="disLike(this)"></i>
+                        <span class="dis-like">0</span>
+                        <i class="fa fa-download" onclick="download(this)"></i>
+                        <span class="dis-like">0</span>
+                    </div>
+                </div>
+                <div class="img-el">
+                    <img src="img/img (4).jpg" alt="">
+                    <div class="author">
+                        <div class="image">
+                            <i class="fa fa-user-circle"></i>
+                        </div>
+                        <div class="des">
+                            <h2>Fashion</h2>
+                        </div>
+                    </div>
+                    <div class="link-group">
+                        <i class="fa fa-heart" onclick="like(this)"></i>
+                        <span class="like">0</span>
+                        <i class="fa fa-thumbs-down" onclick="disLike(this)"></i>
+                        <span class="dis-like">0</span>
+                        <i class="fa fa-download" onclick="download(this)"></i>
+                        <span class="dis-like">0</span>
+                    </div>
+                </div>
+                <div class="img-el">
+                    <img src="img/img (5).jpg" alt="">
+                    <div class="author">
+                        <div class="image">
+                            <i class="fa fa-user-circle"></i>
+                        </div>
+                        <div class="des">
+                            <h2>Photography</h2>
+                        </div>
+                    </div>
+                    <div class="link-group">
+                        <i class="fa fa-heart" onclick="like(this)"></i>
+                        <span class="like">0</span>
+                        <i class="fa fa-thumbs-down" onclick="disLike(this)"></i>
+                        <span class="dis-like">0</span>
+                        <i class="fa fa-download" onclick="download(this)"></i>
+                        <span class="dis-like">0</span>
+                    </div>
+                </div>
+                <div class="img-el">
+                    <img src="img/img (6).jpg" alt="">
+                    <div class="author">
+                        <div class="image">
+                            <i class="fa fa-user-circle"></i>
+                        </div>
+                        <div class="des">
+                            <h2>Photography</h2>
+                        </div>
+                    </div>
+                    <div class="link-group">
+                        <i class="fa fa-heart" onclick="like(this)"></i>
+                        <span class="like">0</span>
+                        <i class="fa fa-thumbs-down" onclick="disLike(this)"></i>
+                        <span class="dis-like">0</span>
+                        <i class="fa fa-download" onclick="download(this)"></i>
+                        <span class="dis-like">0</span>
+                    </div>
+                </div>
+                <div class="img-el">
+                    <img src="img/img (7).jpg" alt="">
+                    <div class="author">
+                        <div class="image">
+                            <i class="fa fa-user-circle"></i>
+                        </div>
+                        <div class="des">
+                            <h2>Personal</h2>
+                        </div>
+                    </div>
+                    <div class="link-group">
+                        <i class="fa fa-heart" onclick="like(this)"></i>
+                        <span class="like">0</span>
+                        <i class="fa fa-thumbs-down" onclick="disLike(this)"></i>
+                        <span class="dis-like">0</span>
+                        <i class="fa fa-download" onclick="download(this)"></i>
+                        <span class="dis-like">0</span>
+                    </div>
+                </div>
+                <div class="img-el">
+                    <img src="img/img (8).jpg" alt="">
+                    <div class="author">
+                        <div class="image">
+                            <i class="fa fa-user-circle"></i>
+                        </div>
+                        <div class="des">
+                            <h2>Travel</h2>
+                        </div>
+                    </div>
+                    <div class="link-group">
+                        <i class="fa fa-heart" onclick="like(this)"></i>
+                        <span class="like">0</span>
+                        <i class="fa fa-thumbs-down" onclick="disLike(this)"></i>
+                        <span class="dis-like">0</span>
+                        <i class="fa fa-download" onclick="download(this)"></i>
+                        <span class="dis-like">0</span>
+                    </div>
+                </div>
+                <div class="img-el">
+                    <img src="img/img (9).jpg" alt="">
+                    <div class="author">
+                        <div class="image">
+                            <i class="fa fa-user-circle"></i>
+                        </div>
+                        <div class="des">
+                            <h2>Creative Designer</h2>
+                        </div>
+                    </div>
+                    <div class="link-group">
+                        <i class="fa fa-heart" onclick="like(this)"></i>
+                        <span class="like">0</span>
+                        <i class="fa fa-thumbs-down" onclick="disLike(this)"></i>
+                        <span class="dis-like">0</span>
+                        <i class="fa fa-download" onclick="download(this)"></i>
+                        <span class="dis-like">0</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>

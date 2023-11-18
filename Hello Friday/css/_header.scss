@@ -1,0 +1,59 @@
+header 
+{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: var(--white);
+    z-index: 5;
+    section 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        color: #EB2A67;
+        padding: 10px 20px;
+        border-bottom: 1px solid #EB2A6747;
+        .title
+        {
+            width: 60%;
+            flex-grow: 1;
+            h1 
+            {
+                font-size: 100%;
+            }
+        }
+        .menu 
+        {
+            width: 50px;
+            text-align: right;
+            font-size: 100%;
+        }
+        .content 
+        {
+            width: 100%;
+            animation: leftToRight 2s forwards;
+            min-height: 100vh;
+            ul 
+            {
+                padding: 10px 0;
+            }
+            ul li a 
+            {
+                padding: 10px 0; 
+                color: var(--black);
+            }
+            // ul li .light 
+            // {
+            //     background: var(--white);
+            // }
+        }
+    }
+}
+@keyframes leftToRight
+{
+    0%
+    {
+        transform: translateX(-100%);
+    }
+}

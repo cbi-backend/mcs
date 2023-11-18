@@ -1,0 +1,35 @@
+main
+{
+    section.motivation
+    {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        background: #1C2238;
+        padding: 50px 20px;
+        .image 
+        {
+            width: 100%;
+        }
+        .content
+        {
+            width: 100%;
+            color: white;
+            h2,p 
+            {
+                padding: 10px 0;
+            }
+            button 
+            {
+                padding: 15px 30px;
+                background: rgb(31, 31, 250);
+                margin: 20px 0;
+                border: 0;
+                color: white;
+                border-radius: 5px;
+            }
+        }
+    }
+}

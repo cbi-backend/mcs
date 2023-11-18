@@ -1,0 +1,118 @@
+@font-face {
+  font-family: Montserrat;
+  src: url(../font/Montserrat-Regular.ttf);
+}
+
+body {
+  font-size: 15px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: #9c0746;
+  font-family: 'Roboto Slab', serif;
+}
+
+p {
+  font-size: 100%;
+  color: #130f11;
+}
+
+a {
+  text-decoration: none;
+  color: #130f11;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Montserrat,sans-serif;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+button {
+  font-family: inherit;
+}
+
+header {
+  padding: 15px 20px;
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  position: fixed;
+  top: 0;
+}
+
+header .name {
+  display: inline;
+}
+
+header .name h1 {
+  font-size: 100%;
+}
+
+header .menu {
+  padding: 0 15px;
+}
+
+header .menu i {
+  color: #9c0746;
+}
+
+header .call {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  text-align: right;
+}
+
+header .call i {
+  color: #9c0746;
+}
+
+main {
+  width: 100%;
+  padding: 15px 20px;
+  background: #fde5ea;
+  background-image: url("../img/cake.png");
+  background-size: 80%;
+  background-position: bottom right;
+  background-repeat: no-repeat;
+}
+
+main .cover {
+  width: 100%;
+  min-height: 100vh;
+  padding: 100px 0;
+  text-align: center;
+  background-image: url("../img/leaf.png");
+  background-size: 25%;
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+
+main .cover h2, main .cover h3, main .cover p {
+  padding: 5px 0;
+}
+
+main .cover h3 {
+  font-weight: normal;
+  font-size: 90%;
+}
+
+main .cover button {
+  margin: 10px 0;
+  outline: none;
+  border: none;
+  background: #E10E5B;
+  padding: 15px 50px;
+  border-radius: 50px;
+  color: white;
+}
+/*# sourceMappingURL=style.css.map */

@@ -1,0 +1,30 @@
+footer
+{
+    width: 100%;
+    section 
+    {
+        .social
+        {
+            width: 100%;
+            text-align: center;
+            padding: 20px 0;
+            i 
+            {
+                padding: 0 10px;
+                color: #802ADD;
+            }
+        }
+        hr 
+        {
+            opacity: .25;
+        }
+        .copy 
+        {
+            text-align: center;
+            p 
+            {
+                padding: 10px 0;
+            }
+        }
+    }
+}

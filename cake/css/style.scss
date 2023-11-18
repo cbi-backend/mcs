@@ -1,0 +1,115 @@
+// 1 2 3 4
+// ! @ # $
+$primary:#9c0746;
+$secondary:#fde5ea;
+$acent:#130f11;
+$high:#E10E5B;
+@font-face {
+    font-family: Montserrat;
+    src: url(../font/Montserrat-Regular.ttf);
+}
+body 
+{
+    font-size: 15px;
+}
+h1,h2,h3,h4,h5,h6 
+{
+    color: $primary;
+    font-family: 'Roboto Slab', serif;
+}
+p 
+{
+    font-size: 100%;
+    color: $acent;
+}
+a 
+{
+    text-decoration: none;
+    color: $acent;
+}
+*
+{
+    padding: 0;
+    margin: 0;
+    font-family: Montserrat,sans-serif;
+    box-sizing: border-box;
+}
+button 
+{
+    font-family: inherit;
+}
+header 
+{
+    padding: 15px 20px;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    .name
+    {
+        display: inline;
+        h1
+        {
+            font-size: 100%;
+        }
+    }
+    .menu
+    {
+        padding: 0 15px;
+        i 
+        {
+            color: $primary;
+        }
+    }
+    .call
+    {
+        flex-grow: 1;
+        text-align: right;
+        i 
+        {
+            color: $primary;
+        }
+    }
+}
+main
+{
+    width: 100%;
+    padding: 15px 20px;
+    background: $secondary;
+    background-image: url('../img/cake.png');
+    background-size: 80%;
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    .cover
+    {
+        width: 100%;
+        min-height: 100vh;
+        padding: 100px 0;
+        text-align: center;
+        background-image: url('../img/leaf.png');
+        background-size: 25%;
+        background-position: center left;
+        background-repeat: no-repeat;
+        h2,h3,p
+        {
+            padding: 5px 0;
+        }
+        h3
+        {
+            font-weight: normal;
+            font-size: 90%;
+        }
+        button 
+        {
+            margin: 10px 0;
+            outline: none;
+            border: none;
+            background: $high;
+            padding: 15px 50px;
+            border-radius: 50px;
+            color: white;
+        }
+    }
+}
