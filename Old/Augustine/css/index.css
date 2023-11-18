@@ -1,0 +1,305 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: inherit;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 16px;
+  line-height: 1.516;
+  letter-spacing: 1px;
+  --primary:#000;
+  --secondary:#fff;
+  --acent:#451314;
+}
+
+a {
+  color: inherit;
+  display: inline-block;
+}
+
+button {
+  font-size: 100%;
+  display: inline-block;
+  border: 0;
+  outline: 0;
+  background-color: transparent;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding: 20px;
+}
+
+header {
+  background-color: var(--secondary);
+}
+
+header section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+header section h1, header section p {
+  opacity: 0.75;
+}
+
+header section .title {
+  width: 60%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+header section .menu {
+  width: 30%;
+  max-width: 60px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: pointer;
+  padding: 5px;
+}
+
+header section .menu .bar {
+  width: 90%;
+  margin: 5px 0;
+  height: 3px;
+  background: var(--primary);
+  opacity: 0.75;
+}
+
+header section .content {
+  display: none;
+  width: 100%;
+}
+
+header section .content ul {
+  list-style: none;
+}
+
+header section .content ul li {
+  text-align: center;
+  padding: 5px 0;
+}
+
+header section .content ul li a {
+  text-decoration: none;
+  opacity: .75;
+  font-weight: bold;
+}
+
+article {
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+main section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 60vh;
+}
+
+main section .content h1 {
+  padding: 10px 0;
+  font-size: 175%;
+}
+
+main section .content p {
+  padding: 5px 0;
+}
+
+main section .content button {
+  margin: 30px 0;
+  padding: 15px 30px;
+  background: var(--secondary);
+}
+
+main .cover {
+  background: var(--acent);
+  color: var(--secondary);
+}
+
+main .latest .content h1, main .latest .content p {
+  opacity: 0.75;
+}
+
+main .latest .content button {
+  margin: 30px 0;
+  padding: 15px 30px;
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+main .strength {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 35vh;
+  background-image: linear-gradient(140deg, rgba(0, 0, 0, 0.25), rgba(0, 0, 0, 0.25)), url("../img/cover .jpg");
+  background-position: cover top;
+  background-attachment: fixed;
+}
+
+main .strength h1 {
+  color: var(--secondary);
+  font-size: 175%;
+}
+
+main .clothing .content h1, main .clothing .content p {
+  opacity: 0.75;
+}
+
+main .clothing .content button {
+  margin: 30px 0;
+  padding: 15px 30px;
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+main .accessories .content h1, main .accessories .content p {
+  opacity: 0.75;
+}
+
+main .accessories .content button {
+  margin: 30px 0;
+  padding: 15px 30px;
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+main .reach {
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 35vh;
+  background-image: linear-gradient(140deg, rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)), url("../img/augustine (1).jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: 100% 100%;
+}
+
+main .reach .content {
+  padding: 20px;
+  color: var(--secondary);
+}
+
+main .reach .content h1 {
+  padding: 10px 0;
+  font-size: 175%;
+}
+
+main .reach .content p {
+  padding: 5px 0;
+}
+
+main .reach .content button {
+  margin: 30px 0;
+  padding: 15px 30px;
+  background: var(--primary);
+  color: var(--secondary);
+}
+
+main .reach .content input {
+  background: var(--secondary);
+  border: 0;
+  outline: 0;
+  padding: 20px 10px;
+  width: 100%;
+  margin: 20px 0;
+  margin-bottom: 0px;
+  font-weight: bold;
+  font-family: inherit;
+  letter-spacing: 1.5px;
+  font-size: 100%;
+}
+
+footer section {
+  opacity: 0.75;
+}
+
+footer section .list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 10px 0;
+}
+
+footer section .list a {
+  display: inline-block;
+  padding: 5px 0;
+}
+
+footer section .social {
+  padding: 10px 0;
+}
+
+footer section .social h1, footer section .social p {
+  padding: 10px 0;
+}
+
+footer section .social .links {
+  padding: 10px 0;
+}
+
+footer section .social .links i {
+  font-size: 150%;
+  padding-right: 10px;
+}
+/*# sourceMappingURL=index.css.map */

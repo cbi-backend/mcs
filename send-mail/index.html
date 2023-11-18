@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Crazy Mails</title>
+    <meta  >
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+    <link rel="shortcut icon" href="img/mail.png" type="image/x-icon"> 
+    <link rel="icon" href="img/mail.png" type="image/x-icon">
+</head>
+<body>
+    <main>
+        <section>
+            <div class="form">
+                <form method="POST" onsubmit="return false">
+                    <div class="group">
+                        <h1><i class="fa fa-envelope"></i> Crazy Mails</h1>
+                    </div>
+                    <div class="group">
+                        <p>From <span>*</span></p>
+                        <input required type="mail" id="from">
+                    </div>
+                    <div class="group">
+                        <p>To <span>*</span></p>
+                        <input required type="mail" id="to">
+                    </div>
+                    <div class="group">
+                        <p>Subject</p>
+                        <input type="mail" id="subject">
+                    </div>
+                    <div class="group">
+                        <p>Body <span>*</span></p>
+                        <textarea required id="body"></textarea>
+                    </div>
+                    <div class="group">
+                        <button id="submit" type="submit">Submit</button>
+                        <button id="reset" type="submit">Reset</button>
+                    </div>
+                </form>
+            </div>
+        </section>
+    </main>
+    <script src="js/index.js"></script>
+</body>
+</html>

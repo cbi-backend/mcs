@@ -1,0 +1,183 @@
+button {
+  margin: 20px 0;
+  outline: none;
+  border: none;
+  background: #E10E5B;
+  padding: 15px 50px;
+  border-radius: 50px;
+  color: white;
+}
+
+main#products {
+  width: 100%;
+  background: white;
+  background-image: url("../img/leaf.png");
+  background-size: 30%;
+  background-repeat: no-repeat;
+  background-position: center left;
+  text-align: center;
+}
+
+main#products .products {
+  width: 100%;
+  padding: 20px 20px;
+}
+
+main#products .products .card img {
+  width: 60%;
+}
+
+main#products .products .card h3, main#products .products .card p {
+  padding: 10px 0;
+}
+
+main#pricing {
+  width: 100%;
+}
+
+main#pricing .pricing {
+  width: 100%;
+  text-align: center;
+  padding: 20px 20px;
+  background: #fde5ea;
+}
+
+main#pricing .pricing h4, main#pricing .pricing h3, main#pricing .pricing p {
+  padding: 20px 0;
+}
+
+main#pricing .pricing .group {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  text-align: left;
+}
+
+main#pricing .pricing .group a {
+  display: inline-block;
+  width: 50%;
+  padding: 5px 0;
+}
+
+main#pricing .pricing .group a span {
+  color: #E10E5B;
+  padding-left: 20px;
+  padding-right: 5px;
+}
+
+main#pricing .pricing .pcz-el {
+  padding: 20px 0;
+}
+
+main#pricing .pricing .pcz-el img {
+  width: 70%;
+}
+
+main#pricing .pricing .pcz-el h4, main#pricing .pricing .pcz-el h3, main#pricing .pricing .pcz-el p {
+  padding: 5px 0;
+}
+
+main#pricing .pricing .pcz-el .ToBig {
+  font-size: 200%;
+}
+
+main#about {
+  width: 100%;
+}
+
+main#about .about {
+  width: 100%;
+  text-align: center;
+  padding: 20px 20px;
+}
+
+main#about .about h2, main#about .about h3, main#about .about p {
+  padding: 20px 0;
+}
+
+main#about .about img {
+  width: 100%;
+}
+
+main#about .about form {
+  padding: 20px 0;
+}
+
+main#about .about form input, main#about .about form textarea {
+  font-family: inherit;
+  padding: 15px 20px;
+  width: 100%;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 10px 0;
+  border: 1px solid #E10E5B;
+  border-radius: 50px;
+  color: #130f11;
+  outline: 0;
+}
+
+main#about .about form input:focus {
+  -webkit-box-shadow: inset 1px 1px 1px #E10E5B, inset -1px -1px 1px #E10E5B;
+          box-shadow: inset 1px 1px 1px #E10E5B, inset -1px -1px 1px #E10E5B;
+}
+
+main#about .about form input::-webkit-input-placeholder, main#about .about form textarea::-webkit-input-placeholder {
+  font-family: inherit;
+  color: #130f11;
+}
+
+main#about .about form input:-ms-input-placeholder, main#about .about form textarea:-ms-input-placeholder {
+  font-family: inherit;
+  color: #130f11;
+}
+
+main#about .about form input::-ms-input-placeholder, main#about .about form textarea::-ms-input-placeholder {
+  font-family: inherit;
+  color: #130f11;
+}
+
+main#about .about form input::placeholder, main#about .about form textarea::placeholder {
+  font-family: inherit;
+  color: #130f11;
+}
+
+main#about .about form button {
+  width: 100%;
+}
+
+footer {
+  width: 100%;
+  padding: 20px 20px;
+  text-align: center;
+  background: #fde5ea;
+}
+
+footer h3 {
+  padding: 10px 0;
+}
+
+footer h3 i.fa {
+  font-size: 100%;
+  padding: 0;
+  color: inherit;
+}
+
+footer p {
+  padding: 5px 0;
+}
+
+footer hr {
+  margin: 5px 0;
+  border-color: #9c0746;
+  opacity: 0.75;
+}
+
+footer i.fa {
+  font-size: 25px;
+  padding: 10px;
+  color: #E10E5B;
+}
+/*# sourceMappingURL=main.css.map */

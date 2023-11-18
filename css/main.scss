@@ -1,0 +1,159 @@
+$primary:#596eed;
+$secondary:#D12099;
+$acent:#54C38A;
+body 
+{
+    font-family: 'Alatsi', sans-serif;
+    padding: 0;
+    margin: 0;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+a 
+{
+    text-decoration: none;
+    color: black;
+}
+main 
+{
+    width: 100%;
+    section.cover
+    {
+        width: 100%;
+        background: $primary;
+        .cover-page
+        {
+            width: 100%;
+            min-height: 100vh;
+            display: flex;
+            flex-wrap: wrap;
+            box-sizing: border-box;
+            background-image: url('../img/cover.png');
+            background-repeat: no-repeat;
+            background-position: bottom right;
+            background-size: 80%;
+            padding: 20px 10%;
+            .nav
+            {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                align-items: center;
+                justify-content: space-around;
+                box-sizing: border-box;
+                max-height: 100px;
+                .Brand-Name
+                {
+                    width: 100px;
+                    flex-grow: 1;
+                    a 
+                    {
+                        h1 
+                        {
+                            font-size: 250%;
+                            color: white;
+                            letter-spacing: 1.5px;
+                        }
+                        span 
+                        {
+                            color: $acent;
+                        }
+                    }
+                }
+                .Navigation-content
+                {
+                    width: 80%;
+                    flex-grow: 1;
+                    display: flex;
+                    flex-wrap: wrap;
+                    align-items: center;
+                    justify-content: flex-end;
+                    ul 
+                    {
+                        display: inline-block;
+                        list-style: none;
+                        padding: 10px 30px;
+                        border-radius: 30px;
+                        box-shadow: inset 2px 2px 1px rgba(0,0,0,0.05),inset -2px -2px 1px rgba(0,0,0,0.05);
+                        li
+                        {
+                            display: inline-block;
+                            display: inline-flex;
+                            align-items: center;
+                            flex-wrap: wrap;
+                            a 
+                            {
+                                display: inline-block;
+                                padding: 10px 20px;
+                                color: white;
+                            }
+                        }
+                        li:before
+                        {
+                            content: '•';
+                            font-size: 250%;
+                            color: white;
+                            border-radius: 50%;
+                        }
+                        li:first-child:before
+                        {
+                            color: $secondary;
+                        }
+                    }
+                    button 
+                    {
+                        outline: none;
+                        border: 0;
+                        color: white;
+                        background: transparent;
+                        padding: 15px 30px;
+                        border-radius: 5px;
+                        font-size: 100%;
+                        font-family: inherit;
+                    }
+                    button:last-child
+                    {
+                        background: $secondary;
+                        box-shadow: 2px 2px 40px rgba(0,0,0,0.15);
+                    }
+                }
+            }
+            .content
+            {
+                width: 100%;
+                box-sizing: border-box;
+                color: white;
+                h1 
+                {
+                    font-size: 350%;
+                    letter-spacing: 1.5px;
+                    width: 40%;
+                }
+                p 
+                {
+                    padding: 10px 0;
+                    width: 25%;
+                    opacity: 0.8;
+                    letter-spacing: 1px;
+                }
+                button 
+                {
+                    outline: none;
+                    border: 0;
+                    color: white;
+                    background: $secondary;
+                    padding: 15px 30px;
+                    border-radius: 5px;
+                    margin: 20px 0;
+                    font-size: 100%;
+                    font-family: inherit;
+                    box-shadow: 2px 2px 40px rgba(0,0,0,0.15);
+                    span 
+                    {
+                        padding: 0 10px;
+                    }
+                }
+            }
+        }
+    }
+}

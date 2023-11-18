@@ -1,0 +1,376 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Acme', sans-serif;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+h1 {
+  letter-spacing: 1.5px;
+}
+
+body {
+  width: 100%;
+  background: #01a9b431;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  background-image: -webkit-gradient(linear, left top, right top, from(#01a9b4), color-stop(#01a9b4), to(#086972));
+  background-image: linear-gradient(90deg, #01a9b4, #01a9b4, #086972);
+  z-index: 3;
+}
+
+header .header {
+  width: 100%;
+}
+
+header .header .head-body {
+  width: 100%;
+  position: relative;
+}
+
+header .header .head-body .logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 5%;
+}
+
+header .header .head-body .logo .title {
+  width: 70%;
+}
+
+header .header .head-body .logo .title h1 {
+  margin: 10px 0;
+}
+
+header .header .head-body .logo .title h1 a {
+  text-decoration: none;
+  color: white;
+  font-size: 150%;
+}
+
+header .header .head-body .logo .menu {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .header .head-body .logo .menu img {
+  width: 35px;
+  cursor: pointer;
+}
+
+header .header .head-body .menuContent {
+  width: 90%;
+  padding: 20px;
+  background: #01a9b4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  min-height: 100vh;
+  max-width: 350px;
+  display: none;
+}
+
+header .header .head-body .menuContent .close {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+header .header .head-body .menuContent .close img {
+  width: 35px;
+  cursor: pointer;
+}
+
+header .header .head-body .menuContent .content {
+  width: 100%;
+}
+
+header .header .head-body .menuContent .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+header .header .head-body .menuContent .content ul li {
+  padding: 10px 0;
+}
+
+header .header .head-body .menuContent .content ul li button {
+  color: white;
+  font-size: 120%;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+header .header .head-body .menuContent .serach {
+  width: 100%;
+  padding: 20px 0;
+}
+
+header .header .head-body .menuContent .serach .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px 5px;
+}
+
+header .header .head-body .menuContent .serach .row input {
+  width: 70%;
+  border: 0;
+  outline: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background: transparent;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+header .header .head-body .menuContent .serach .row input::-webkit-input-placeholder {
+  font-family: inherit;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+header .header .head-body .menuContent .serach .row input:-ms-input-placeholder {
+  font-family: inherit;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+header .header .head-body .menuContent .serach .row input::-ms-input-placeholder {
+  font-family: inherit;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+header .header .head-body .menuContent .serach .row input::placeholder {
+  font-family: inherit;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+header .header .head-body .menuContent .serach .row img {
+  width: 20px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+header .header .head-body .Maincontent {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  header .header {
+    width: 100%;
+    padding: 10px 2.5%;
+    background-image: -webkit-gradient(linear, left top, right top, from(#01a9b4), color-stop(#01a9b4), to(#086972));
+    background-image: linear-gradient(90deg, #01a9b4, #01a9b4, #086972);
+  }
+  header .header .head-body {
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .header .head-body .logo {
+    width: 200px;
+    padding: 0;
+  }
+  header .header .head-body .logo .title {
+    width: 100%;
+  }
+  header .header .head-body .logo .menu {
+    display: none;
+  }
+  header .header .head-body .menuContent {
+    display: none;
+  }
+  header .header .head-body .Maincontent {
+    width: 70%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  header .header .head-body .Maincontent ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 0;
+  }
+  header .header .head-body .Maincontent ul li {
+    padding: 10px 15px;
+  }
+  header .header .head-body .Maincontent ul li button {
+    color: white;
+    font-size: 120%;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+  header .header .head-body .Maincontent ul li button:hover {
+    color: rgba(0, 0, 0, 0.9);
+  }
+  header .header .head-body .Maincontent ul li img {
+    width: 20px;
+    padding: 5px 0;
+    cursor: pointer;
+  }
+  header .header .head-body .Maincontent .serach {
+    width: 250px;
+    padding: 20px 0;
+    position: fixed;
+    top: 35px;
+    display: none;
+  }
+  header .header .head-body .Maincontent .serach .row {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background: white;
+    -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px 5px;
+  }
+  header .header .head-body .Maincontent .serach .row input {
+    width: 70%;
+    border: 0;
+    outline: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    background: transparent;
+    font-family: inherit;
+    font-size: 120%;
+  }
+  header .header .head-body .Maincontent .serach .row input::-webkit-input-placeholder {
+    font-family: inherit;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  header .header .head-body .Maincontent .serach .row input:-ms-input-placeholder {
+    font-family: inherit;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  header .header .head-body .Maincontent .serach .row input::-ms-input-placeholder {
+    font-family: inherit;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  header .header .head-body .Maincontent .serach .row input::placeholder {
+    font-family: inherit;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  header .header .head-body .Maincontent .serach .row img {
+    width: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 1280px) {
+  header .header {
+    padding: 10px 20%;
+  }
+}
+
+main {
+  width: 100%;
+}
+
+main .formUi {
+  width: 90%;
+  margin: 0 auto;
+  min-height: 100vh;
+  padding: 70px 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .formUi .graph {
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+  height: 400px;
+  background: white;
+  padding: 15px;
+  border-radius: 10px;
+}
+
+@media (min-width: 768px) {
+  main {
+    background-image: linear-gradient(140deg, #08697221, #08697221), url("../img/hospital.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+}
+/*# sourceMappingURL=style.css.map */

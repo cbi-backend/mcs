@@ -1,0 +1,409 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 16px;
+  font-family: 'PT Sans', sans-serif;
+}
+
+img {
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+#screen1 {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#screen1 .preloader {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#screen1 .preloader img {
+  width: 100%;
+}
+
+#screen2 .signUp {
+  width: 100%;
+  padding: 0 10%;
+  min-height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#screen2 .signUp i {
+  font-size: 500%;
+}
+
+#screen2 .signUp .inputGroup {
+  background: #eaeaea;
+  padding: 5px 20px;
+  border-radius: 5px 5px 0 0;
+  border-bottom: 1px solid black;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#screen2 .signUp .inputGroup label {
+  width: 100%;
+  opacity: .75;
+  margin: 0;
+}
+
+#screen2 .signUp .inputGroup label i {
+  font-size: 100%;
+  padding: 0;
+  padding-right: 10px;
+}
+
+#screen2 .signUp .inputGroup select {
+  width: 20%;
+  outline: 0;
+  border: 0;
+  background: transparent;
+}
+
+#screen2 .signUp .inputGroup input {
+  outline: 0;
+  border: 0;
+  background: transparent;
+  width: 80%;
+  font-family: inherit;
+  padding: 5px 10px;
+}
+
+#screen2 .signUp button {
+  border: 0;
+  outline: 0;
+  background: #e91b1b;
+  color: white;
+  width: 100%;
+  margin-top: 10%;
+  padding: 10px 0;
+}
+
+#screen3 {
+  position: relative;
+  background: #eaeaea;
+}
+
+#screen3 header, #screen3 section, #screen3 footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#screen3 header {
+  padding: 20px 10px;
+  position: -webkit-sticky;
+  position: sticky;
+  background: white;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 0 0 10px 10px;
+}
+
+#screen3 header .logo {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+#screen3 header .logo i {
+  padding: 0 5px;
+  color: #e91b1b;
+  font-size: 100%;
+}
+
+#screen3 header .logo select {
+  width: 60%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+#screen3 header .links {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#screen3 header .links i {
+  padding: 0 10px;
+  font-size: 100%;
+}
+
+#screen3 section {
+  padding: 50px 20px;
+}
+
+#screen3 section .card {
+  width: 100%;
+  margin: 20px 0;
+}
+
+#screen3 section .card .image-el {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#screen3 section .card .content {
+  width: 100%;
+  padding: 10px;
+}
+
+#screen3 section .card .content h1 {
+  font-size: 150%;
+  text-align: center;
+  opacity: 0.75;
+  padding: 10px 0;
+}
+
+#screen3 section .card .content p {
+  text-align: justify;
+  opacity: 0.75;
+}
+
+#screen3 section .card .content p a {
+  color: #e91b1b;
+  text-decoration: underline;
+}
+
+#screen3 section .card .content p span.more {
+  display: none;
+}
+
+#screen3 section#profile {
+  padding: 50px 0;
+  min-height: 100vh;
+}
+
+#screen3 section#profile .profile-body {
+  width: 100%;
+  padding: 0 30px;
+}
+
+#screen3 section#profile .profile-body .image {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+#screen3 section#profile .profile-body .content {
+  width: 100%;
+  padding: 30px 0;
+}
+
+#screen3 section#profile .profile-body .content .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  opacity: 0.75;
+}
+
+#screen3 section#profile .profile-body .content .row .col-4 {
+  width: 40%;
+}
+
+#screen3 section#profile .profile-body .content .row .col-4 p {
+  font-weight: bold;
+}
+
+#screen3 section#profile .profile-body .content .row .col-6 {
+  width: 60%;
+}
+
+#screen3 section#profile .profile-body .content .row .col-6 p {
+  font-weight: normal;
+}
+
+#screen3 section#settings {
+  padding: 0;
+}
+
+#screen3 section#settings .setting-body {
+  width: 100%;
+  padding: 0 30px;
+  min-height: 100vh;
+}
+
+#screen3 section#settings .setting-body .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 10px 0;
+  opacity: 0.75;
+}
+
+#screen3 section#settings .setting-body .row .col-4 {
+  width: 40%;
+}
+
+#screen3 section#settings .setting-body .row .col-4 p {
+  font-weight: bold;
+}
+
+#screen3 section#settings .setting-body .row .col-6 {
+  width: 60%;
+}
+
+#screen3 section#settings .setting-body .row .col-6 select {
+  width: 100%;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  font-weight: bold;
+  letter-spacing: 1px;
+  color: #e91b1b;
+  border: 1px solid #e91b1b;
+  padding: 5px 10px;
+}
+
+#screen3 section#settings .setting-body .row:first-child {
+  margin-top: 150px;
+}
+
+#screen3 footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background: white;
+  max-height: 120px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  border-radius: 10px 10px 0 0;
+}
+
+#screen3 footer .li-el {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  opacity: 0.5;
+  padding: 10px 0;
+}
+
+#screen3 footer .li-el i {
+  font-size: 100%;
+  color: inherit;
+}
+
+#screen3 footer .li-el p {
+  width: 100%;
+  text-align: center;
+}
+
+#screen3 footer .selected {
+  opacity: 1;
+  color: #e91b1b;
+  border-top: 3px solid #e91b1b;
+}
+
+#screen3 footer .selected i {
+  color: #e91b1b;
+}
+/*# sourceMappingURL=main.css.map */

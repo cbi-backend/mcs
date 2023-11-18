@@ -1,0 +1,342 @@
+$primary-1:white;
+$primary-2:#eaeaea;
+$secondary:#e91b1b;
+$acent:black;
+*
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-family: 'PT Sans', sans-serif;
+}
+img 
+{
+    width: 100%;
+}
+main
+{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+}
+#screen1
+{
+    align-items: center;
+    .preloader
+    {
+        width: 50%;
+        margin: 0 auto;
+        img 
+        {
+            width: 100%;
+        }
+    }
+}
+#screen2
+{
+    .signUp
+    {
+        width: 100%;
+        padding: 0 10%;
+        min-height: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        i 
+        {
+            font-size: 500%;
+        }
+        .inputGroup
+        {
+            background: $primary-2;
+            padding: 5px 20px;
+            border-radius: 5px 5px 0 0;
+            border-bottom: 1px solid $acent;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center;
+            label 
+            {
+                width: 100%;
+                opacity: .75;
+                i 
+                {
+                    font-size: 100%;
+                    padding: 0;
+                    padding-right: 10px;
+                }
+                margin: 0;
+            }
+            select
+            {
+                width: 20%;
+                outline: 0;
+                border: 0;
+                background: transparent;
+            }
+            input 
+            {
+                outline: 0;
+                border: 0;
+                background: transparent;
+                width: 80%;
+                font-family: inherit;
+                padding: 5px 10px;
+            }
+        }
+        button 
+        {
+            border: 0;
+            outline: 0;
+            background: $secondary;
+            color: $primary-1;
+            width: 100%;
+            margin-top: 10%;
+            padding: 10px 0;
+        }
+    }
+}
+#screen3
+{
+    position: relative;
+    background: $primary-2;
+    header,section,footer 
+    {
+        width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+    }
+    header 
+    {
+        padding: 20px 10px;
+        position: sticky;
+        background: $primary-1;
+        top:0;
+        left: 0;
+        z-index: 2;
+        border-radius: 0 0 10px 10px;
+        .logo
+        {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center; 
+            i 
+            {
+                padding: 0 5px;
+                color: $secondary;
+                font-size: 100%;
+            }
+            select 
+            {
+                width: 60%;
+                flex-grow: 1;
+                outline: 0;
+                border: 0;
+                background: transparent;
+                font-weight: bold;
+                letter-spacing: 1px;
+            }
+        }
+        .links
+        {
+            width: 50%;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: flex-end; 
+            i 
+            {
+                padding: 0 10px;
+                font-size: 100%;
+            }
+        }
+    }
+    section 
+    {
+        padding: 50px 20px;
+        .card
+        {
+            width: 100%;
+            margin: 20px 0;
+            .image-el 
+            {
+                width: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .content
+            {
+                width: 100%;
+                padding: 10px;
+                h1 
+                {
+                    font-size: 150%;
+                    text-align: center;
+                    opacity: 0.75;
+                    padding: 10px 0;
+                }
+                p 
+                {
+                    text-align: justify;
+                    opacity: 0.75;
+                    a 
+                    {
+                        color: $secondary;
+                        text-decoration: underline;
+                    }
+                    span.more 
+                    {
+                        display: none;
+                    }
+                }
+            }
+        }
+    }
+    section#profile
+    {
+        padding: 50px 0;
+        min-height: 100vh;
+        .profile-body
+        {
+            width: 100%;
+            padding: 0 30px;
+            .image
+            {
+                width: 100%;
+                border-radius: 10px;
+                overflow: hidden;
+            }
+            .content
+            {
+                width: 100%;
+                padding: 30px 0;
+                .row 
+                {
+                    width: 100%;
+                    display: flex;
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 10px 0;
+                    opacity: 0.75;
+                    .col-4
+                    {
+                        width: 40%;
+                        p
+                        {
+                            font-weight: bold;
+                        }
+                    }
+                    .col-6
+                    {
+                        width: 60%;
+                        p
+                        {
+                            font-weight: normal;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    section#settings
+    {
+        padding: 0;
+        .setting-body
+        {
+            width: 100%;
+            padding: 0 30px;
+            min-height: 100vh;
+            .row 
+            {
+                width: 100%;
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: center;
+                align-items: center;
+                padding: 10px 0;
+                opacity: 0.75;
+                .col-4
+                {
+                    width: 40%;
+                    p
+                    {
+                        font-weight: bold;
+                    }
+                }
+                .col-6
+                {
+                    width: 60%;
+                    select 
+                    {
+                        width: 100%;
+                        outline: 0;
+                        border: 0;
+                        background: transparent;
+                        font-weight: bold;
+                        letter-spacing: 1px;
+                        color: $secondary;
+                        border: 1px solid $secondary;
+                        padding: 5px 10px;
+                    }
+                }
+            }
+            .row:first-child
+            {
+                margin-top: 150px;
+            }
+        }
+    }
+    footer 
+    {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+        background: white;
+        max-height: 120px;
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        z-index: 2;
+        border-radius: 10px 10px 0 0;
+        .li-el
+        {
+            flex-grow: 1;
+            display: flex;
+            flex-wrap: wrap;
+            align-items: center;
+            justify-content: center; 
+            opacity: 0.5;
+            padding: 10px 0;
+            i 
+            {
+                font-size: 100%;
+                color: inherit;
+            }
+            p 
+            {
+                width: 100%;
+                text-align: center;
+            }
+        }
+        .selected
+        {
+            opacity: 1;
+            color: $secondary;
+            border-top: 3px solid $secondary;
+            i 
+            {
+                color: $secondary;
+            }
+        }
+    }
+}

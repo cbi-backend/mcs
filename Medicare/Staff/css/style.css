@@ -1,0 +1,688 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Acme', sans-serif;
+  font-size: 15px;
+  line-height: 1;
+  letter-spacing: 1px;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+h1 {
+  letter-spacing: 1.5px;
+}
+
+body {
+  width: 100%;
+  background: #01a9b431;
+}
+
+.main {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  padding: 50px 0;
+}
+
+.main .pageBanner {
+  display: none;
+}
+
+.main .formUi {
+  width: 100%;
+}
+
+.formUi {
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.formUi .group {
+  width: 100%;
+  padding: 50px 5%;
+}
+
+.group {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.group .great {
+  width: 100%;
+  padding-bottom: 30px;
+}
+
+.group .great * {
+  padding: 10px;
+}
+
+.group .great h1 {
+  font-size: 125%;
+}
+
+.group .great .brand {
+  padding-bottom: 30px;
+  color: #086972;
+}
+
+.group .great span {
+  padding: 0;
+}
+
+.group form {
+  width: 100%;
+}
+
+form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+form .row {
+  width: 100%;
+  padding: 10px;
+  padding-bottom: 20px;
+}
+
+form .row label {
+  padding: 5px 0;
+  color: #086972;
+}
+
+form .row input, form .row select, form .row ::-webkit-input-placeholder {
+  border: 0;
+  width: 100%;
+  outline: 0;
+  border-bottom: 1px solid #08697251;
+  padding: 5px 0;
+  background: transparent;
+}
+
+form .row input, form .row select, form .row :-ms-input-placeholder {
+  border: 0;
+  width: 100%;
+  outline: 0;
+  border-bottom: 1px solid #08697251;
+  padding: 5px 0;
+  background: transparent;
+}
+
+form .row input, form .row select, form .row ::-ms-input-placeholder {
+  border: 0;
+  width: 100%;
+  outline: 0;
+  border-bottom: 1px solid #08697251;
+  padding: 5px 0;
+  background: transparent;
+}
+
+form .row input, form .row select, form .row ::placeholder {
+  border: 0;
+  width: 100%;
+  outline: 0;
+  border-bottom: 1px solid #08697251;
+  padding: 5px 0;
+  background: transparent;
+}
+
+form .row ::-webkit-input-placeholder {
+  color: #086972;
+}
+
+form .row :-ms-input-placeholder {
+  color: #086972;
+}
+
+form .row ::-ms-input-placeholder {
+  color: #086972;
+}
+
+form .row ::placeholder {
+  color: #086972;
+}
+
+form .row select {
+  color: #086972;
+  margin-top: 5px;
+}
+
+form .row select option {
+  color: #086972;
+}
+
+form .row button {
+  outline: 0;
+  border: 1px solid #086972;
+  border-radius: 50px;
+  background: #08697251;
+  padding: 10px 25px;
+  color: #086972;
+  cursor: pointer;
+}
+
+form .row-2 {
+  width: 50%;
+}
+
+form .buttonGroup {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+span {
+  font-weight: bold;
+  color: #086972;
+}
+
+a {
+  text-decoration: none;
+  color: #086972;
+}
+
+.request {
+  width: 100%;
+  padding: 50px 0;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.request p {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .main .formUi {
+    width: 100%;
+  }
+  .group {
+    background: rgba(255, 255, 255, 0.95);
+    border-radius: 5px;
+    -webkit-box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 2px 30px rgba(0, 0, 0, 0.5);
+  }
+  .pageBanner {
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .pageBanner .content {
+    width: 100%;
+    padding: 0 5%;
+  }
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  background-image: -webkit-gradient(linear, left top, right top, from(#01a9b4), color-stop(#01a9b4), to(#086972));
+  background-image: linear-gradient(90deg, #01a9b4, #01a9b4, #086972);
+  z-index: 3;
+}
+
+header .header {
+  width: 100%;
+}
+
+header .header .head-body {
+  width: 100%;
+  position: relative;
+}
+
+header .header .head-body .logo {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 10px 5%;
+}
+
+header .header .head-body .logo .title {
+  width: 70%;
+}
+
+header .header .head-body .logo .title h1 {
+  margin: 10px 0;
+}
+
+header .header .head-body .logo .title h1 a {
+  text-decoration: none;
+  color: white;
+  font-size: 150%;
+}
+
+header .header .head-body .logo .menu {
+  width: 30%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+header .header .head-body .logo .menu img {
+  width: 35px;
+  cursor: pointer;
+}
+
+header .header .head-body .menuContent {
+  width: 90%;
+  padding: 20px;
+  background: #01a9b4;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 2;
+  min-height: 100vh;
+  max-width: 350px;
+  display: none;
+}
+
+header .header .head-body .menuContent .close {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 10px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.75);
+}
+
+header .header .head-body .menuContent .close img {
+  width: 35px;
+  cursor: pointer;
+}
+
+header .header .head-body .menuContent .content {
+  width: 100%;
+}
+
+header .header .head-body .menuContent .content ul {
+  list-style: none;
+  padding: 0;
+}
+
+header .header .head-body .menuContent .content ul li {
+  padding: 10px 0;
+}
+
+header .header .head-body .menuContent .content ul li button {
+  color: white;
+  font-size: 120%;
+  outline: 0;
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+header .header .head-body .menuContent .serach {
+  width: 100%;
+  padding: 20px 0;
+}
+
+header .header .head-body .menuContent .serach .row {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 10px 5px;
+}
+
+header .header .head-body .menuContent .serach .row input {
+  width: 70%;
+  border: 0;
+  outline: 0;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background: transparent;
+  font-family: inherit;
+  font-size: 100%;
+}
+
+header .header .head-body .menuContent .serach .row input::-webkit-input-placeholder {
+  font-family: inherit;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+header .header .head-body .menuContent .serach .row input:-ms-input-placeholder {
+  font-family: inherit;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+header .header .head-body .menuContent .serach .row input::-ms-input-placeholder {
+  font-family: inherit;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+header .header .head-body .menuContent .serach .row input::placeholder {
+  font-family: inherit;
+  color: rgba(0, 0, 0, 0.75);
+}
+
+header .header .head-body .menuContent .serach .row img {
+  width: 20px;
+  cursor: pointer;
+  margin: 0 10px;
+}
+
+header .header .head-body .Maincontent {
+  display: none;
+}
+
+@media (min-width: 1024px) {
+  header .header {
+    width: 100%;
+    padding: 10px 2.5%;
+    background-image: -webkit-gradient(linear, left top, right top, from(#01a9b4), color-stop(#01a9b4), to(#086972));
+    background-image: linear-gradient(90deg, #01a9b4, #01a9b4, #086972);
+  }
+  header .header .head-body {
+    width: 100%;
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+  header .header .head-body .logo {
+    width: 200px;
+    padding: 0;
+  }
+  header .header .head-body .logo .title {
+    width: 100%;
+  }
+  header .header .head-body .logo .menu {
+    display: none;
+  }
+  header .header .head-body .menuContent {
+    display: none;
+  }
+  header .header .head-body .Maincontent {
+    width: 70%;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    display: block;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+  }
+  header .header .head-body .Maincontent ul {
+    width: 100%;
+    list-style: none;
+    padding: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+    margin: 0;
+  }
+  header .header .head-body .Maincontent ul li {
+    padding: 10px 15px;
+  }
+  header .header .head-body .Maincontent ul li button {
+    color: white;
+    font-size: 120%;
+    -webkit-transition: all 1s;
+    transition: all 1s;
+    outline: 0;
+    border: 0;
+    background: transparent;
+    cursor: pointer;
+  }
+  header .header .head-body .Maincontent ul li button:hover {
+    color: rgba(0, 0, 0, 0.9);
+  }
+  header .header .head-body .Maincontent ul li img {
+    width: 20px;
+    padding: 5px 0;
+    cursor: pointer;
+  }
+  header .header .head-body .Maincontent .serach {
+    width: 250px;
+    padding: 20px 0;
+    position: fixed;
+    top: 35px;
+    display: none;
+  }
+  header .header .head-body .Maincontent .serach .row {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    background: white;
+    -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+            box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+    padding: 10px 5px;
+  }
+  header .header .head-body .Maincontent .serach .row input {
+    width: 70%;
+    border: 0;
+    outline: 0;
+    -webkit-box-flex: 1;
+        -ms-flex-positive: 1;
+            flex-grow: 1;
+    background: transparent;
+    font-family: inherit;
+    font-size: 120%;
+  }
+  header .header .head-body .Maincontent .serach .row input::-webkit-input-placeholder {
+    font-family: inherit;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  header .header .head-body .Maincontent .serach .row input:-ms-input-placeholder {
+    font-family: inherit;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  header .header .head-body .Maincontent .serach .row input::-ms-input-placeholder {
+    font-family: inherit;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  header .header .head-body .Maincontent .serach .row input::placeholder {
+    font-family: inherit;
+    color: rgba(0, 0, 0, 0.75);
+  }
+  header .header .head-body .Maincontent .serach .row img {
+    width: 20px;
+    cursor: pointer;
+    margin: 0 10px;
+  }
+}
+
+@media (min-width: 1280px) {
+  header .header {
+    padding: 10px 20%;
+  }
+}
+
+main .dashBoard {
+  width: 100%;
+  padding: 100px 5%;
+  min-height: 100vh;
+}
+
+main .dashBoard .dash-body {
+  width: 100%;
+  padding: 10px 0;
+}
+
+main .dashBoard .dash-body .dash-title {
+  width: 100%;
+  padding: 20px 0;
+  text-align: center;
+}
+
+main .dashBoard .dash-body .dash-title p, main .dashBoard .dash-body .dash-title h1 {
+  padding: 10px 0;
+}
+
+main .dashBoard .dash-body .dash-content {
+  width: 100%;
+  padding: 10px 0;
+}
+
+main .dashBoard .dash-body .dash-content .dash-el {
+  width: 100%;
+  padding: 20px;
+  margin: 10px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+main .dashBoard .dash-body .dash-content .dash-el img {
+  width: 25%;
+}
+
+main .dashBoard .dash-body .dash-content .dash-el h1, main .dashBoard .dash-body .dash-content .dash-el p {
+  width: 100%;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  main {
+    background-image: linear-gradient(140deg, #08697251, #08697251), url("../img/patient.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+  }
+  main .dashBoard {
+    padding: 0 2.5%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  main .dashBoard .dash-body {
+    width: 100%;
+    padding: 10px 0;
+  }
+  main .dashBoard .dash-body .dash-title {
+    width: 100%;
+    padding: 20px 0;
+    text-align: center;
+  }
+  main .dashBoard .dash-body .dash-title p, main .dashBoard .dash-body .dash-title h1 {
+    padding: 10px 0;
+    color: white;
+    text-shadow: 1px 1px 10px rgba(0, 0, 0, 0.75);
+  }
+  main .dashBoard .dash-body .dash-content {
+    width: 100%;
+    padding: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  main .dashBoard .dash-body .dash-content .dash-el {
+    width: 30%;
+    padding: 20px;
+    margin: 10px 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background: white;
+    border-radius: 10px;
+  }
+  main .dashBoard .dash-body .dash-content .dash-el img {
+    width: 50%;
+  }
+  main .dashBoard .dash-body .dash-content .dash-el h1, main .dashBoard .dash-body .dash-content .dash-el p {
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

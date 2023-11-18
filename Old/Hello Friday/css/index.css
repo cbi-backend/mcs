@@ -1,0 +1,568 @@
+* {
+  padding: 0;
+  margin: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Roboto', sans-serif;
+  opacity: 0.8;
+}
+
+body {
+  font-family: 'Josefin Sans', sans-serif;
+  font-size: 15px;
+  --pink: #FE9693;
+  --green: #2ADCC4;
+  --violet: #802ADD;
+  --black:#000;
+  --white:#fff;
+}
+
+button, a, label, input, ::-webkit-input-placeholder {
+  font-family: inherit;
+}
+
+button, a, label, input, :-ms-input-placeholder {
+  font-family: inherit;
+}
+
+button, a, label, input, ::-ms-input-placeholder {
+  font-family: inherit;
+}
+
+button, a, label, input, ::placeholder {
+  font-family: inherit;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+a, button {
+  display: inline-block;
+}
+
+section {
+  width: 100%;
+  padding: 20px;
+}
+
+ul {
+  list-style: none;
+}
+
+button {
+  background: transparent;
+  padding: 10px 30px;
+  border: 1px solid var(--black);
+  font-size: 100%;
+}
+
+p {
+  opacity: .6;
+}
+
+img {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: var(--white);
+  z-index: 5;
+}
+
+header section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  color: #EB2A67;
+  padding: 10px 20px;
+  border-bottom: 1px solid #EB2A6747;
+}
+
+header section .title {
+  width: 60%;
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+
+header section .title h1 {
+  font-size: 100%;
+}
+
+header section .menu {
+  width: 50px;
+  text-align: right;
+  font-size: 100%;
+}
+
+header section .content {
+  width: 100%;
+  -webkit-animation: leftToRight 2s forwards;
+          animation: leftToRight 2s forwards;
+  min-height: 100vh;
+}
+
+header section .content ul {
+  padding: 10px 0;
+}
+
+header section .content ul li a {
+  padding: 10px 0;
+  color: var(--black);
+}
+
+@-webkit-keyframes leftToRight {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+@keyframes leftToRight {
+  0% {
+    -webkit-transform: translateX(-100%);
+            transform: translateX(-100%);
+  }
+}
+
+main {
+  width: 100%;
+}
+
+main section.cover {
+  padding: 0 20px;
+  padding-top: 100px;
+}
+
+main section.cover .content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: -20px;
+}
+
+main section.cover .content .image {
+  width: 70%;
+  margin: 0 15%;
+}
+
+main section.cover .content .image img {
+  width: 100%;
+  border-radius: 50%;
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+main section.cover .content .group {
+  width: 100%;
+}
+
+main section.cover .content .group h1, main section.cover .content .group p {
+  padding: 10px 0;
+  font-weight: normal;
+}
+
+main section.cover .content .group h1.tooBig {
+  font-size: 500%;
+  padding: 0;
+  margin-bottom: -20px;
+  text-shadow: -2px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+main section.cover .content .group h1 {
+  text-shadow: -2px 5px 10px rgba(0, 0, 0, 0.25);
+}
+
+main section.cover .content .group .buttonGroup {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+main section.cover .content .group .buttonGroup a {
+  width: 47%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin: 20px 0;
+  border-radius: 5px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.25);
+}
+
+main section.cover .content .group .buttonGroup a .imageBar {
+  width: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: black;
+}
+
+main section.cover .content .group .buttonGroup a .imageBar i {
+  color: var(--white);
+}
+
+main section.cover .content .group .buttonGroup a .contentBar {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+  background: rgba(0, 0, 0, 0.8);
+  color: var(--white);
+  padding: 10px 0 10px 10px;
+}
+
+main section.cover .content .group .buttonGroup a .contentBar h4 {
+  font-size: 50%;
+  padding: 5px 0;
+  font-weight: normal;
+  opacity: .8;
+}
+
+main section.cover .content .group .buttonGroup a .contentBar p {
+  font-size: 90%;
+  opacity: .8;
+  word-wrap: break-word;
+  letter-spacing: 1px;
+  padding: 0;
+}
+
+main section.slider {
+  width: 100%;
+}
+
+main section.slider .slide-el {
+  width: 100%;
+}
+
+main section.slider .slide-el .content {
+  width: 100%;
+  padding: 20px 0;
+}
+
+main section.slider .slide-el .content h2, main section.slider .slide-el .content p {
+  padding: 10px 0;
+}
+
+main section.slider .slide-el .content button {
+  margin: 20px 0;
+  background: #EB2A67;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 15px 40px;
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.5);
+}
+
+main section.slider .slide-el .image {
+  width: 100%;
+}
+
+main section.motivation {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #1C2238;
+  padding: 50px 20px;
+}
+
+main section.motivation .image {
+  width: 100%;
+}
+
+main section.motivation .content {
+  width: 100%;
+  color: white;
+}
+
+main section.motivation .content h2, main section.motivation .content p {
+  padding: 10px 0;
+}
+
+main section.motivation .content button {
+  padding: 15px 30px;
+  background: #1f1ffa;
+  margin: 20px 0;
+  border: 0;
+  color: white;
+  border-radius: 5px;
+}
+
+main section.features {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.features .feature-el {
+  width: 100%;
+}
+
+main section.features .feature-el .image {
+  width: 100%;
+  padding: 20px;
+  background-image: linear-gradient(140deg, #FEA9A6, #FB3C67);
+  border-radius: 5px;
+  -webkit-box-shadow: 0 30px 30px #FB3C6760;
+          box-shadow: 0 30px 30px #FB3C6760;
+  padding-bottom: 0;
+  overflow: hidden;
+}
+
+main section.features .feature-el .image .dec {
+  background: #28A2E1;
+  height: 40px;
+  width: 40%;
+  margin: 0 auto;
+  -webkit-clip-path: polygon(0 1%, 50% 0, 75% 100%, 0% 100%);
+          clip-path: polygon(0 1%, 50% 0, 75% 100%, 0% 100%);
+}
+
+main section.features .feature-el .image h3 {
+  padding: 10px 0;
+  text-align: center;
+  margin-top: -40px;
+  color: white;
+  padding-left: 20px;
+  letter-spacing: 1px;
+  text-shadow: 1px 1px 5px black;
+}
+
+main section.features .feature-el .image img {
+  margin-top: 20px;
+  margin-bottom: -150px;
+}
+
+main section.features .feature-el .content {
+  width: 100%;
+  padding: 20px;
+}
+
+main section.features .feature-el .content h2, main section.features .feature-el .content p {
+  padding: 10px 0;
+}
+
+main section.features .feature-el .content h2 {
+  color: #FB3C67;
+  font-size: 125%;
+  letter-spacing: 1px;
+}
+
+main section.features .fe2 .image {
+  background-image: linear-gradient(140deg, #29E0C2, #903AE3);
+  -webkit-box-shadow: 0 30px 30px #903AE360;
+          box-shadow: 0 30px 30px #903AE360;
+}
+
+main section.features .fe2 .image .dec {
+  background: #28A2E1;
+}
+
+main section.features .fe2 .content h2 {
+  color: #29E0C2;
+}
+
+main section.features .fe3 .image {
+  background-image: linear-gradient(140deg, #7F2ADD, #FA79B2);
+  -webkit-box-shadow: 0 30px 30px #FA79B260;
+          box-shadow: 0 30px 30px #FA79B260;
+}
+
+main section.features .fe3 .image .dec {
+  background: #28A2E1;
+}
+
+main section.features .fe3 .content h2 {
+  color: #7F2ADD;
+}
+
+main section.testimonials {
+  width: 100%;
+}
+
+main section.testimonials .title h2 {
+  padding: 10px 0;
+  text-align: center;
+}
+
+main section.testimonials .content {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+main section.testimonials .content .ts-el {
+  width: 300px;
+  margin: 20px 0;
+  border-radius: 10px;
+  overflow: hidden;
+  -webkit-box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+          box-shadow: 2px 2px 20px rgba(0, 0, 0, 0.25);
+}
+
+main section.testimonials .content .ts-el .share {
+  background: #2BA8E0;
+  color: white;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  padding: 5px 10px;
+  border-radius: 30px;
+  margin: 10px;
+}
+
+main section.testimonials .content .ts-el .share i {
+  padding: 0 10px;
+}
+
+main section.testimonials .content .ts-el .share p {
+  opacity: 1;
+}
+
+main section.testimonials .content .ts-el .share p span {
+  opacity: .5;
+}
+
+main section.testimonials .content .ts-el hr {
+  opacity: 0.25;
+}
+
+main section.testimonials .content .ts-el .profile {
+  padding: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+main section.testimonials .content .ts-el .profile .image {
+  width: 40%;
+}
+
+main section.testimonials .content .ts-el .profile .bio {
+  width: 60%;
+  padding: 0 10px;
+}
+
+main section.testimonials .content .ts-el .profile .bio h3, main section.testimonials .content .ts-el .profile .bio label, main section.testimonials .content .ts-el .profile .bio p {
+  padding-bottom: 10px;
+}
+
+main section.testimonials .content .ts-el .profile .bio label {
+  opacity: .5;
+  display: block;
+}
+
+main section.testimonials .content .ts-el button {
+  width: 100%;
+  border: 0;
+  background: #36EEE2;
+  color: white;
+}
+
+main section.testimonials .content .t2 button {
+  background: #FD9E9A;
+}
+
+main section.testimonials .content .t3 button {
+  background: #7E29DE;
+}
+
+main h3.caption {
+  margin-top: -100px;
+  text-align: center;
+  color: white;
+  font-size: 200%;
+  margin-bottom: 50px;
+  letter-spacing: 1.5px;
+  opacity: 1;
+  text-shadow: 2px 2px 10px black;
+}
+
+footer {
+  width: 100%;
+}
+
+footer section .social {
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+}
+
+footer section .social i {
+  padding: 0 10px;
+  color: #802ADD;
+}
+
+footer section hr {
+  opacity: .25;
+}
+
+footer section .copy {
+  text-align: center;
+}
+
+footer section .copy p {
+  padding: 10px 0;
+}
+/*# sourceMappingURL=index.css.map */

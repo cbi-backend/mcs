@@ -1,0 +1,99 @@
+main{
+    section.features
+    {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        .feature-el
+        {
+            width: 100%;
+            .image
+            {
+                width: 100%;
+                padding: 20px;
+                background-image: linear-gradient(140deg,#FEA9A6,#FB3C67);
+                border-radius: 5px;
+                box-shadow: 0 30px 30px #FB3C6760;
+                padding-bottom: 0;
+                overflow: hidden;
+                .dec
+                {
+                    background: #28A2E1;
+                    height: 40px;
+                    width: 40%;
+                    margin: 0 auto;
+                    clip-path: polygon(0 1%, 50% 0, 75% 100%, 0% 100%);
+                }
+                h3 
+                {
+                    padding: 10px 0;
+                    text-align: center;
+                    margin-top: -40px;
+                    color: white;
+                    padding-left: 20px;
+                    letter-spacing: 1px;
+                    text-shadow: 1px 1px 5px black;
+                }
+                img 
+                {
+                    margin-top: 20px;
+                    margin-bottom: -150px;
+                }
+            }
+            .content
+            {
+                width: 100%;
+                padding: 20px;
+                h2,p 
+                {
+                    padding: 10px 0;
+                }
+                h2 
+                {
+                    color: #FB3C67;
+                    font-size: 125%;
+                    letter-spacing: 1px;
+                }
+            }
+        }
+        
+        .fe2
+        {
+            .image
+            {
+                background-image: linear-gradient(140deg,#29E0C2,#903AE3);
+                box-shadow: 0 30px 30px #903AE360;
+                .dec
+                {
+                    background: #28A2E1;
+                }
+            }
+            .content
+            {
+                h2 
+                {
+                    color: #29E0C2;
+                }
+            }
+        }
+        .fe3
+        {
+            .image
+            {
+                background-image: linear-gradient(140deg,#7F2ADD,#FA79B2);
+                box-shadow: 0 30px 30px #FA79B260;
+                .dec
+                {
+                    background: #28A2E1;
+                }
+            }
+            .content
+            {
+                h2 
+                {
+                    color: #7F2ADD;
+                }
+            }
+        }
+    }
+}
